@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "tms-university"
+version = "0.1.0"
+description = ""
+authors = ["greatlaki <greatlaki911@gmail.com>"]
+readme = "README.md"
+packages = [{include = "tms_university"}]
+
+[tool.poetry.dependencies]
+python = "3.11.4"
+pre-commit = "^3.3.3"
+fastapi = "^0.100.0"
+uvicorn = "^0.22.0"
+sqlalchemy = "^2.0.18"
+pydantic = {extras = ["email"], version = "^2.0.2"}
+envparse = "^0.2.0"
+alembic = "^1.11.1"
+psycopg2-binary = "^2.9.6"
+asyncpg = "^0.28.0"
+mypy = "^1.4.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
