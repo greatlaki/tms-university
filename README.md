@@ -28,3 +28,16 @@ Make sure you have installed following tools:
 
 #### Install pre commit hooks
 `pre-commit install`
+
+Go to the folder where you cloned the project. Add variables to the dotenv file
+### Variables of the dotenv file
+
+### Django settings
+
+| Name                    | Sample                                                 |
+|-------------------------|--------------------------------------------------------|
+| SQLALCHEMY_DATABASE_URL | postgresql://postgres:postgres@localhost:5432/postgres |
+
+
+#### Setting up Migrations
+`alembic upgrade heads`
